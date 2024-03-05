@@ -1,0 +1,620 @@
+/*Fuente */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+/*estilo del cuerpo de la pagina*/
+body {
+  background-color: #080202;
+  font-family: "Poppins", sans-serif;
+}
+/*este conteiner lo que hace es centrar todo*/
+.container{
+  max-width:1200px;
+  margin: 0 auto;
+}
+/*id de la clase donde esta el video de fondo*/
+#hero{
+  min-height: 100vh;
+  position: relative;
+}
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 121%;
+  object-fit: cover;
+ 
+}
+.capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 121%;
+  background-color: #080202;
+  opacity: 50%;
+
+}
+/*submenu*/
+.menuInicio {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 160px;
+  margin:0px 20px 1px 1200px;
+  display: none;  
+}
+
+.menuInicio li {
+  padding: 12px 16px;  
+  border-bottom: 1px solid #ddd;
+}
+
+.menuInicio li:last-child {
+   border-bottom: 0;
+}
+
+.menuInicio li a {
+  text-decoration: none;
+  color: #ffffff;  
+}
+
+#menu:checked ~ .menuInicio {
+  display: block; 
+}
+/**/
+
+
+.swiper-button-prev::after{
+  font-size: 25px;
+
+}
+.swiper-button-next::after{
+  font-size: 25px;
+
+}
+/*modificamos las flechitas del carrusel de color rojo*/
+.swiper-button-next{
+  color: #ffffff;
+
+}
+.swiper-button-prev{
+  color: #ffffff;
+
+}
+
+/*AQUI LE DAMOS COLOR BLANCO A LOS BULLETS*/
+.swiper-pagination-bullet{
+  background-color: #D3D2D2;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #ffffff;
+}
+/* Menú y Barra de Navegación */
+.menu{
+  position:absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar{
+  display: flex;
+}
+
+.menu-1{
+  margin-right: 180px;
+}
+
+.menu-2{
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+  height:85px;
+}
+/* Estilos del Logotipo */
+.logo-1{
+  width: 0;
+}
+.logo-2{
+  width: 150px;
+  margin:-30px 0px 0px 0px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+/* Redes Sociales */
+.socials{
+  display: flex;
+}
+
+.social{
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.social:hover{
+  background-color: #000000;
+}
+.social img{
+  margin: 8px 0 0 10px;
+}
+.menu .navbar ul li{
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a{
+  font-size: 18px;
+  padding:20px;
+  color: #FFFFFF;
+  display: block;
+
+}
+.menu .navbar ul li a:hover{
+  color: #000000;
+  
+}
+/* Botón de Menú (Hamburguesa) */
+#menu{
+  display: none;
+}
+.menu-icono{
+  width: 25px;
+  margin:0px 20px 1px 1200px;
+
+}
+/*.menu label{
+  cursor: pointer;
+  display: none;
+}*/
+.header-content{
+  margin-top: 200px;
+  padding-bottom: 50px;
+
+}
+/*creacion de Slider */
+.slider{
+  display: flex;
+  align-items: center;
+}
+.slider-txt{
+  margin-left: 85px;
+  width: 50%;
+}
+
+.slider-txt h1{
+  font-size: 70px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.slider-txt p{
+  font-size: 18px;
+  color: #ffffff;
+}
+.botones{
+  margin-top: 50px;
+
+}
+.btn-1{
+  display: inline-block;
+  padding: 15px 35px;
+  border: 2px solid #ffffff;
+  color: #FFFFFF;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border-radius:50px
+}
+
+.btn-1:hover{
+  background-color: #000000;
+}
+
+.slider.img{
+  width: 50%;
+}
+.slider-img img{
+  margin-right: 225px;
+  width: 550px;
+
+}
+/*producto*/
+.products{
+  background-color: #0D0D0D;
+
+}
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+
+}
+.tabs label{
+  width: 15%;
+  order: 1;
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+  color: #A7A7A7;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background ease 0.2s;
+}
+
+.tabs .tab{
+  order:99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding-top:25px ;
+}
+
+.tabs input[type="radio"]{
+  display: none;
+}
+.tabs input[type="radio"]:checked + label{
+  border-bottom: 2px solid #ffffff;
+  color: #FFFFFF;
+}
+.tabs input[type="radio"]:checked + label+ .tab{
+  display: block;
+}
+
+#productos{
+  background-color: #000000;
+}
+
+
+.product{
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  margin: 0 10px;
+
+}
+
+.product-img{
+  width: 50%;
+  text-align: left;
+}
+.product-img h4{
+  display:inline-block ;
+  padding: 5px 7px;
+  line-height: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 2px solid #555555;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.product-img img{
+  width: 150px;
+  height: 120px;
+
+}
+.product-txt{
+  width: 50%;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.product-txt h4{
+  color: #FFFFFF;
+  font-size:18px ;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.product-txt p{
+  color: #A7A7A7;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.product-txt span{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 800;
+
+}
+#info{
+ background: 
+    linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 100%),
+    url("https://i.ibb.co/Trw2XHw/Whats-App-Image-2024-03-03-at-5-40-32-PM.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+
+.info{
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.info-img{
+  width: 50%;
+}
+.info-img img{
+  width: 500px;
+  height: 250px;
+
+}
+.info-txt{
+  width: 50%;
+
+}
+.info-txt h2{
+  font-size: 72px;
+  color: #FFFFFF;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.info-txt p{
+  font-size: 18px;
+  color: #A7A7A7;
+  margin-bottom: 50px;
+}
+
+
+.btn-2{
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #DB241B;
+  color: #FFFFFF;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 50px;
+
+}
+.btn-2:hover{
+  background-color: #ad1d16;
+}
+
+/*seccion de horario*/
+
+.horario{
+  padding: 100px 0px;
+  background-color: #000000;
+}
+#horariocss{
+  background-color: #000000;
+}
+
+
+.horario-info h2{
+  font-size: 75px;
+  color: #FFFFFF;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.horario-txt{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.txt{
+  color: #FFFFFF;
+
+}
+.txt h4{
+  font-size: 18px;
+  color: #A7A7A7;
+  margin-bottom: 30px;
+}
+.txt p{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.mapa{
+  text-align: right;
+  margin-right: 150px;
+  margin: -750px 250px 70px 400px;
+}
+/*seccion de final de pagina footer*/
+#footercss{
+  background: 
+  linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 100%),
+  url("https://i.ibb.co/ZgJG8GR/Captura-de-pantalla-2024-03-04-065515.png");
+  background-size: cover;
+  width: 100%;
+  
+}
+.footer{
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links h4{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+
+}
+.links ul li a{
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+
+}
+
+/*responsive por media queries */
+@media(max-width:991px){
+  .menu{
+    padding: 20px;
+    justify-content: space-between;
+
+  }
+  .menu-2{
+    display: none;
+  }
+  .logo-1{
+    width: 100px;
+  }
+  .logo-2{
+    width: 0;
+  }
+  .menu label{
+    display: initial;
+  }
+  .menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+  }
+  .menu.navbar ul li {
+    width: 100%;
+  }
+
+  menu:checked ~ .navbar{
+    display: initial;
+  }
+  video {
+    height: 150%; /* Ajusta el tamaño para pantallas más pequeñas */
+  }
+
+  .capa {
+    height: 150%; /* Ajusta el tamaño para pantallas más pequeñas */
+  }
+  .header-content{
+    padding: 30px;
+    margin-top: 100px;
+
+  }
+  .slider{
+    flex-direction: column;
+
+  }
+  .slider-txt{
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+  .slider-txt h1{
+    font-size: 50px;
+
+  }
+  .slider-txt p{
+    font-size: 16px;
+  }
+  .btn-1{
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .slider-img{
+    width: 100%;
+    text-align: center;
+  }
+  .slider-img img{
+    margin-right: 0px;
+    width: 300px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets,.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction{
+    bottom: -7px;
+  }
+  .tabs{
+    padding: 50px 30px;
+
+  }
+  .tabs label{
+    width: 33%;
+  }
+  .info{
+    padding: 30px;
+    flex-direction: column;
+
+  }
+  .info.img{
+    width: 100%;
+    text-align: center;
+
+  }
+  .info-img img{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 25px;
+
+  }
+  .info-txt{
+    width: 100%;
+    text-align: center;
+  }
+  .info-txt h2{
+    font-size: 50px;
+
+  }
+  .info-txt p{
+    font-size: 16px;
+  }
+  .btn-1{
+    font-size: 16px;
+  }
+  
+  .horario{
+    padding: 30px;
+    text-align: center;
+
+  }
+  .horario-info h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .horario-txt{
+    flex-direction: column;
+
+  }
+  .social{
+    justify-content: center;
+  }
+  .social img{
+    margin: 8px 0 0 0;
+  }
+  .footer{
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .links h4{
+    margin: 25px 0px 10px 0px;
+  }
+
+
+}
