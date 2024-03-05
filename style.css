@@ -23,7 +23,7 @@ body {
   min-height: 100vh;
   position: relative;
 }
-
+/*video de fondo en el menu*/
 video{
   position: absolute;
   top: 0;
@@ -33,6 +33,7 @@ video{
   object-fit: cover;
  
 }
+/*capa de transparencia para el video*/
 .capa{
   position: absolute;
   top: 0;
@@ -194,7 +195,7 @@ video{
   margin-left: 85px;
   width: 50%;
 }
-
+/*texto de slider h1*/
 .slider-txt h1{
   font-size: 70px;
   color: #FFFFFF;
@@ -221,7 +222,7 @@ video{
   margin-right: 20px;
   border-radius:50px
 }
-
+/*color al pasar sobre el boton*/
 .btn-1:hover{
   background-color: #000000;
 }
@@ -277,6 +278,7 @@ video{
 .tabs input[type="radio"]:checked + label+ .tab{
   display: block;
 }
+/*color de fondo de productos*/
 
 #productos{
   background-color: #000000;
@@ -337,6 +339,7 @@ video{
   font-weight: 800;
 
 }
+/*imagen como degradado suave y estatica */
 #info{
  background: 
     linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 100%),
@@ -433,6 +436,7 @@ video{
   font-weight: 600;
   margin-bottom: 15px;
 }
+/*seccion de api de maps*/
 .mapa{
   text-align: right;
   margin-right: 150px;

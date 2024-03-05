@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SanDev</title>
+    <!--uso de la libreria swipper de js para diseño de carrusel-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     
+    <!--imagen(favicon) de la pagina de sandev -->
     <link rel="icon" type="image/svg" sizes="16x16"  href="./images/favicon.svg">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
-
+<!--seccion del header de la pagina -->
     <header>
         
         <div class="menu container">
@@ -31,7 +33,7 @@
                     <li><a href="#productos">Productos</a></li>
                   </ul>
                 
-
+                <!--navbar principal de la pagina con inicio,info,productos,horario -->
                 <nav class="navbar">
                     <div class="menu-1">
                         <ul>
@@ -43,14 +45,19 @@
 
 
                     </div>
+
+                    <!--logo principal de sandev -->
                     <img class="logo-2" src="./images/logo.svg" alt="">
                     <div class="menu-2">
                         <ul>
                             <li><a href="#horario">Horario</a></li>
                         </ul>
+                        <!--seccion de redes sociales -->
                         <div class="socials">
+                            <!--enlaces de las redes sociales-->
                             <a href="https://www.facebook.com/?locale=es_LA">
                                 <div class="social">
+                                    <!--imagen de la red social-->
                                     <img src="./images/s1.svg" alt="">
 
                                 </div>
@@ -76,6 +83,8 @@
             </label>
 
         </div>
+
+        <!--carrusel de productos -->
         <div class="header-content container" id="hero">
             <div class="swiper mySwiper-1">
                 <div class="swiper-wrapper">
@@ -204,6 +213,7 @@
 
         </div>
         <div>
+            <!--video de fondo silenciado que se repite siempre  -->
             <video muted autoplay loop >
                 <source src="./Video/Sandalias Planas Blancas Trenzadas Para Mujer, Sandalias Informales Con Banda Elástica.mp4" type="video/mp4">
             </video>
@@ -212,7 +222,7 @@
             </div>
         </div>
     </header>
-
+<!--seccion del slider de productos con sus imagenes y texto -->
     <main class="products" id="productos">
         <div class="tabs container">
 
@@ -264,6 +274,7 @@
                         </div>
                     </div>
 
+                    <!--botones -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
@@ -486,6 +497,7 @@
         </div>
         
     </main>
+    <!--seccion nueva donde va la informacion de sandev -->
     <section id="info">
         <section class="info container" >
             <div class="info-img">
@@ -496,6 +508,7 @@
 
                 </div>
             </div>
+            <!--texto de la seccion informacion -->
             <div class="info-txt" id="informacion">
                 <h2>Informacion</h2>
                 <p>"Sandalias SanDev es una empresa dedicada a la fabricación y venta de sandalias de alta calidad. Con más de una década en el mercado, nos especializamos en ofrecer diseños elegantes y cómodos para hombres, mujeres y niños. Nuestro compromiso con la artesanía y los materiales duraderos nos ha convertido en una opción confiable para aquellos que buscan calzado versátil para cualquier ocasión. Desde diseños casuales hasta opciones más formales, en Sandalias SanDev encontrarás el equilibrio perfecto entre estilo y comodidad."</p>
@@ -504,7 +517,7 @@
 
         </section>
     </section>  
-
+<!--seccion del horario  -->
     <section class="horario" id="horariocss">
     <div class="imagen_fondo">
 
@@ -563,16 +576,17 @@
     </div>
      
         
-
     </section>
+    <!--seccion donde hacemos uso del api de maps -->
     <section>
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3328.910357321531!2d-73.13362557017788!3d7.15327634362867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1709120613889!5m2!1ses!2sco" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
     </section>
-<section id="footercss">
 
+<!--seccion del footer de la pagina -->
+<section id="footercss">
 
     <footer class="footer container" >
         
@@ -588,18 +602,17 @@
                 <li><a href="#">telefono</a></li>
                 <li><a href="#">Tiendas</a></li>
 
-
             </ul>
 
         </div>
+      
         <div class="links">
+
             <h4>Informacion</h4>
             <ul>
                 <li><a href="#">Politicas de privacidad</a></li>
                 <li><a href="#">Politicas de datos</a></li>
                 <li><a href="#">Terminos y condiciones</a></li>
-
-
             </ul>
 
         </div>
@@ -611,10 +624,10 @@
                 <li><a href="#">cambios y garantias</a></li>
                 <li><a href="#">pedir</a></li>
 
-
             </ul>
 
         </div>
+        <!--seccion de redes sociales del footer-->
         <div class="links">
             <h4>Redes Sociales </h4>
             <div class="socials">
@@ -641,6 +654,8 @@
         
 
     </footer>
+    <!--aqui es donde enlazamos el js con el html-->
+
 </section>
 
     
